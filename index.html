@@ -6,29 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header><h1>Tic Tac Toe</h1></header>
   <div class="board">
-    <!-- <button>&#9675;</button> -->
-    <button>
-      <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <use href="#shape-circle"></use>
-      </svg>
-    </button>
-    <!-- <button>&#10005;</button> -->
-    <button>
-      <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
-        <use href="#shape-cross"></use>
-      </svg>
-    </button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
-    <button></button>
+    <button data-index="0"></button>
+    <button data-index="1"></button>
+    <button data-index="2"></button>
+    <button data-index="3"></button>
+    <button data-index="4"></button>
+    <button data-index="5"></button>
+    <button data-index="6"></button>
+    <button data-index="7"></button>
+    <button data-index="8"></button>
   </div>
   <button class="new-game">New Game</button>
   <svg class="hide">

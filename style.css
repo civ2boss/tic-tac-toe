@@ -34,6 +34,10 @@ h1 {
   width: 100px;
 }
 
+.board .won {
+  background: #c4ffc4;
+}
+
 .board button circle,
 .board button line {
   stroke: #2d4558;
