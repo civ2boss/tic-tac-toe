@@ -1,10 +1,10 @@
 const shapeCircle = `
-<svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg aria-label="circle" width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <use href="#shape-circle"></use>
 </svg>
 `;
 const shapeCross = `
-<svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg aria-label="cross" width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <use href="#shape-cross"></use>
 </svg>
 `;
@@ -124,4 +124,8 @@ function logic() {
   });
 }
 
-logic();
+window.onload = () => {
+  logic();
+};
+
+export default logic;
