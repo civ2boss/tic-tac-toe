@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  color: #444;
+  font-family: Avenir, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.33;
+  margin: 60px 0 20px;
+}
+
+.board {
+  border: 1px solid #c4c4c4;
+  color: #eaeaea;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(3, 100px);
+  margin: 0 auto;
+  padding: 15px;
+  width: 336px;
+}
+
+.board button {
+  background: #c4c4c4;
+  border: 0;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+}
+
+.board button circle,
+.board button line {
+  stroke: #2d4558;
+}
+
+.new-game {
+  background-color: #2d4558;
+  border: 1px solid #2d4558;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Avenir, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 60px;
+  letter-spacing: .1em;
+  margin: 32px 0;
+  width: 200px;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

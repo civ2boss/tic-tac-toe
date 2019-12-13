@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="/style.e308ff8e.css">
+<script src="/style.e308ff8e.js"></script></head>
+<body>
+  <header><h1>Tic Tac Toe</h1></header>
+  <div class="board">
+    <!-- <button>&#9675;</button> -->
+    <button>
+      <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <use href="#shape-circle"></use>
+      </svg>
+    </button>
+    <!-- <button>&#10005;</button> -->
+    <button>
+      <svg width="50" height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <use href="#shape-cross"></use>
+      </svg>
+    </button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+    <button></button>
+  </div>
+  <button class="new-game">New Game</button>
+  <svg class="hide">
+    <defs>
+      <g id="shape-circle">
+        <circle cx="25" cy="25" r="21" stroke="#2d4558" fill="transparent" stroke-width="3"></circle>
+      </g>
+      <g id="shape-cross">
+        <line x1="4" x2="46" y1="4" y2="46" stroke="#2d4558" stroke-width="3"></line>
+        <line x1="46" x2="4" y1="4" y2="46" stroke="#2d4558" stroke-width="3"></line>
+      </g>
+    </defs>
+  </svg>
+</body>
+</html>
