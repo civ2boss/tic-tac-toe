@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <header><h1>Tic Tac Toe</h1></header>
-  <div class="board" aria-label="board">
-    <button data-index="0" aria-label="piece 1"></button>
-    <button data-index="1" aria-label="piece 2"></button>
-    <button data-index="2" aria-label="piece 3"></button>
-    <button data-index="3" aria-label="piece 4"></button>
-    <button data-index="4" aria-label="piece 5"></button>
-    <button data-index="5" aria-label="piece 6"></button>
-    <button data-index="6" aria-label="piece 7"></button>
-    <button data-index="7" aria-label="piece 8"></button>
-    <button data-index="8" aria-label="piece 9"></button>
-  </div>
-  <button class="new-game">New Game</button>
-  <svg class="hide">
-    <defs>
-      <g id="shape-circle">
-        <circle cx="25" cy="25" r="21" stroke="#2d4558" fill="transparent" stroke-width="3"/>
-      </g>
-      <g id="shape-cross">
-        <line x1="4" x2="46" y1="4" y2="46" stroke="#2d4558" stroke-width="3"/>
-        <line x1="46" x2="4" y1="4" y2="46" stroke="#2d4558" stroke-width="3"/>
-      </g>
-    </defs>
-  </svg>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Tic Tac Toe</h1></header>
+    <div class="message"></div>
+    <div class="board" aria-label="board">
+      <button data-index="0" aria-label="piece 1"></button>
+      <button data-index="1" aria-label="piece 2"></button>
+      <button data-index="2" aria-label="piece 3"></button>
+      <button data-index="3" aria-label="piece 4"></button>
+      <button data-index="4" aria-label="piece 5"></button>
+      <button data-index="5" aria-label="piece 6"></button>
+      <button data-index="6" aria-label="piece 7"></button>
+      <button data-index="7" aria-label="piece 8"></button>
+      <button data-index="8" aria-label="piece 9"></button>
+    </div>
+    <button class="new-game">New Game</button>
+    <svg class="hide">
+      <defs>
+        <g id="shape-circle">
+          <circle
+            cx="25"
+            cy="25"
+            r="21"
+            stroke="#2d4558"
+            fill="transparent"
+            stroke-width="3"
+          />
+        </g>
+        <g id="shape-cross">
+          <line
+            x1="4"
+            x2="46"
+            y1="4"
+            y2="46"
+            stroke="#2d4558"
+            stroke-width="3"
+          />
+          <line
+            x1="46"
+            x2="4"
+            y1="4"
+            y2="46"
+            stroke="#2d4558"
+            stroke-width="3"
+          />
+        </g>
+      </defs>
+    </svg>
+  </body>
 </html>
