@@ -20,7 +20,7 @@
     "babel-jest": "^25.1.0",
     "fs": "0.0.1-security",
     "jest": "^25.1.0",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.0.0-nightly.432",
     "path": "^0.12.7"
   }
 }
