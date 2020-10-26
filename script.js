@@ -17,6 +17,7 @@ function logic() {
   let boardMatrix = ['', '', '', '', '', '', '', '', ''];
   let currentPlayer = 'O';
   let winner = false;
+  let tied = false;
 
   const switchPlayer = () => {
     currentPlayer = currentPlayer === 'O' ? 'X' : 'O';
@@ -33,6 +34,10 @@ function logic() {
       Array.from(pieces)[index].classList.add('won');
     });
     message.innerHTML = `${currentPlayer} is the winner!`;
+  };
+
+  const showTiedMessage = () => {
+    message.innerHTML = `The game is tied!`;
   };
 
   // 0, 1, 2
@@ -102,6 +107,17 @@ function logic() {
     }
   };
 
+  const checkTie = () => {
+    if (!winner) {
+      const noEmptyCell = boardMatrix.indexOf("") === -1;
+      if (noEmptyCell) {
+        tied = true;
+        disableBoard();
+        showTiedMessage();
+      }
+    }
+  }
+
   board.addEventListener('click', e => {
     if (e.target.tagName === 'BUTTON' && e.target.innerHTML === '' && !winner) {
       const buttonIndex = e.target.dataset.index;
@@ -110,6 +126,7 @@ function logic() {
       checkRows();
       checkCols();
       checkDias();
+      checkTie();
       if (!winner) switchPlayer();
     }
   });
