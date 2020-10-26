@@ -13,6 +13,7 @@ function logic() {
   const board = document.querySelector('.board');
   const pieces = board.querySelectorAll('button');
   const newGame = document.querySelector('.new-game');
+  const message = document.querySelector('.message');
   let boardMatrix = ['', '', '', '', '', '', '', '', ''];
   let currentPlayer = 'O';
   let winner = false;
@@ -31,6 +32,7 @@ function logic() {
     indices.forEach(index => {
       Array.from(pieces)[index].classList.add('won');
     });
+    message.innerHTML = `${currentPlayer} is the winner!`;
   };
 
   // 0, 1, 2
@@ -105,10 +107,10 @@ function logic() {
       const buttonIndex = e.target.dataset.index;
       boardMatrix[buttonIndex] = currentPlayer === 'O' ? 'O' : 'X';
       e.target.innerHTML = currentPlayer === 'O' ? shapeCircle : shapeCross;
-      switchPlayer();
       checkRows();
       checkCols();
       checkDias();
+      if (!winner) switchPlayer();
     }
   });
 
@@ -116,6 +118,7 @@ function logic() {
     boardMatrix = ['', '', '', '', '', '', '', '', ''];
     currentPlayer = 'O';
     winner = false;
+    message.innerHTML = '';
     Array.from(pieces).forEach(button => {
       button.disabled = false;
       button.innerHTML = '';

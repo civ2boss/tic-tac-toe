@@ -15,6 +15,14 @@ h1 {
   margin: 60px 0 20px;
 }
 
+.message {
+  color: #444;
+  font-family: Avenir, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
 .board {
   border: 1px solid #c4c4c4;
   color: #eaeaea;
@@ -53,7 +61,7 @@ h1 {
   font-size: 1.5rem;
   font-weight: 700;
   height: 60px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin: 32px 0;
   width: 200px;
 }
