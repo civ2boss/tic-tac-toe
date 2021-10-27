@@ -2,11 +2,11 @@
   "name": "tic-tac-toe",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "src/script.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "jest src",
     "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
@@ -14,8 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.5",
-    "@babel/plugin-transform-runtime": "^7.7.6",
-    "@babel/preset-env": "^7.7.6",
+    "@parcel/babel-plugin-transform-runtime": "^2.0.0",
+    "@parcel/babel-preset-env": "^2.0.0",
     "@testing-library/dom": "^6.10.1",
     "@testing-library/jest-dom": "^4.2.4",
     "babel-jest": "^25.1.0",
